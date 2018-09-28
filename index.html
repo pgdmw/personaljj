@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人简介</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/echarts.common.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function fixHeight() {
+                var headerHeight = $("#switcher").height();
+                $("#iframe").attr("height", $(window).height()-54+ "px");
+            }
+            $(window).resize(function () {
+                fixHeight();
+            }).resize();
+
+            $('.icon-monitor').addClass('active');
+
+            $(".icon-mobile-3").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-3');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-2").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-2');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-1").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width');
+                $('.icon-tablet,.icon-mobile,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-tablet").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('tablet-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-monitor").click(function () {
+                $("#by").css("overflow-y", "hidden");
+                $('#iframe-wrap').removeClass().addClass('full-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+	function Responsive($a) {
+		if ($a == true) $("#Device").css("opacity", "100");
+		if ($a == false) $("#Device").css("opacity", "0");
+		$('#iframe-wrap').removeClass().addClass('full-width');
+		$('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	};
+    </script>
+	
+</head>
+	<body id="by">
+		<header class="hd">
+        <div class="inner">
+            <a class="logo">yjj</a>
+            <nav>
+                <ul class="menu">
+                    <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+                    <li data-menuanchor="page2"><a href="#page2">个人信息</a></li>
+                    <li data-menuanchor="page3"><a href="#page3">主要技能</a></li>
+                    <li data-menuanchor="page4"><a href="#page4">项目经验</a></li>
+                    <li data-menuanchor="page5"><a href="#page5">自我评价</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主体开始 -->
+    <div class="con">
+        <div class="section s1 active">
+            <!--<img src="img/wenzi.png">-->
+            	<div class="row-word animate bounceOut">
+            		<span class="col-xs-12 hidden-sm hidden-md hidden-lg resume-hide">个人简历</span>
+					<p class="motto resume-hide hinge-sty" style="position: relative">爱技术，爱生活</p>
+            	</div>
+        </div>
+        <!-- 第二页 -->
+        <div class="section s2">
+            <div class="left">
+                <ul>
+                    <li>
+                        <img src="./img/glass.png" alt="">
+						<h4>基本信息</h4>
+						<p>
+						姓名: 杨晶杰 女
+						<br>
+						年龄: 21岁 籍贯：山西
+						</p>
+                    </li>
+                    <li>
+                        <img src="./img/hat.png" alt="">
+						<h4>毕业院校</h4>
+						<p>
+						长治学院
+						</p>
+                    </li>
+                    <li>
+                       <img src="./img/book.png" alt="">
+						<h4>学历和专业</h4>
+						<p>
+						计算机系 本科
+						<br>
+						专业技能 编程
+						</p>
+                    </li>
+                    <li>
+                    	<img src="./img/tel.png" alt="">
+						<h4>联系方式</h4>
+						<p>
+						邮箱 1693572807@qq.com
+						<br>
+						电话18234505549
+						</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <h1>个人信息</h1>
+                <p>杨晶杰</p>
+                <p>全栈工程师</p>
+                                         
+            </div>
+            <!--<div class="bg"><img src="img/sc2.png"></div>-->
+        </div>
+
+        <!-- 第三页 -->
+        <div class="section s3">
+            <div class="left">
+                <ul>
+                    <li>
+                        <img src="img/img7.png">
+                        <p>ps</p>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <img src="img/img8.jpg">
+                        <p>HTML和CSS</p>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <img src="img/img9.jpg">
+                        <p>Javascript</p>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="main" style="width: 600px;height:400px;"></div>
+            <div class="right">
+                <h1>主要技能</h1>
+                <p>HTML+CSS<br>Javascript</p>
+                <!--<a>站酷主页</a>-->
+            </div>
+            <!--<div class="bg"><img src="img/sc3.png"></div>-->
+        </div>
+
+        <!-- 第四页 -->
+        <div class="section s4">
+            <div class="left">
+                <ul>
+                    <li>
+                        <img src="img/img4.png">
+                        <a href="https://pgdmw.github.io/xiaomi/">小米</a>
+                    </li>
+                    <li>
+                        <img src="img/img5.png">
+                        <a href="https://pgdmw.github.io/suning/">苏宁</a>
+                    </li>
+                    <li>
+                        <img src="img/img6.png">
+                        <a href="https://pgdmw.github.io/Weathers/">天气</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <h1>项目经验</h1>
+                <p>对电商类网站的编写</p>
+                <p>移动端</p>
+            </div>
+            <!--<div class="bg"><img src="img/sc4.png"></div>-->
+        </div>
+
+        <!-- 第五页 -->
+        <div class="section s5">
+        	<div class="top"></div>
+           	<div class="center animate rotateOut">
+	           	<h1>Focus Me</h1>
+				<div class="word">
+					<p>
+					有责任，工作踏实，性格开朗乐观，积极上进。
+					</p>
+				</div>
+				<div class="word">
+					<p>
+					易和人相处，拥有良好的亲和力。<br>
+					</p>
+				</div>
+				<div class="word">
+					<p>
+					喜欢js，非常热爱编程，喜欢钻研新的技术，</br>具有很强的自学能力和良好的学习方法，喜欢研究各种新的框架。
+					</p>
+           		</div>
+           	</div>
+           <div class="bottom"></div>
+    </div>
+    <!-- 主体结束 -->
+
+		<script>
+		    $(function(){
+		        $('.con').fullpage({
+		            navigation: true,
+		            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+		            menu: '.menu',
+		            //设置背景颜色
+					sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
+		
+		        });
+		
+		    });
+		</script>
+	</body>
+</html>
