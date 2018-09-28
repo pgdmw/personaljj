@@ -99,6 +99,7 @@ a{
 
 .s2 li{
 	text-align: center;
+	margin-right: 20px;
 }
 .s2 .left img{
 	display: block;
@@ -107,6 +108,7 @@ a{
 }
 .s2 .left li h4{
 	font-size: 16px;
+	margin: 0 auto;
 }
 .s2 .left li a{
 	
@@ -152,8 +154,8 @@ a{
 	text-align: center;
 }
 .s3 .left li img{
-	width: 260px;
-	height: 390px;
+	width: 220px;
+	height: 300px;
 	display: block;
 	/*margin-left: 100px;*/
 }
@@ -189,7 +191,7 @@ a{
 }*/
 .s4 li{
 	text-align: center;
-	margin-right: 0;
+	margin-right: 20px;
 }
 .s4 li a{
 	margin-top: 10px;
