@@ -97,7 +97,7 @@ a{
 	z-index: 1;
 }
 .s2 ul{
-	width: 1170px;
+	width: 900px;
 	height: 210px;
 	display: flex;
 	justify-content: space-between;
@@ -158,7 +158,6 @@ a{
 .s3 .left li{ 
 	transition-delay: 0.8s;
 	text-align: center;
-	margin-left: 100px;
 }
 .s3 .left li img{
 	width: 260px;
@@ -203,7 +202,7 @@ a{
 }
 .s4 li a{
 	margin-top: 10px;
-	margin-left: 80px;
+	
 	font-size: 16px;
 	
 	
